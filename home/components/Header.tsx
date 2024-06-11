@@ -1,7 +1,17 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
-    <div>
-      <h2>The Company</h2>
-    </div>
+    <nav>
+      <div>
+        <Link href="/">Home</Link>
+      </div>
+      <div>
+        <a href="/blog">Blog</a>
+      </div>
+      <div>
+        <Link href="/about">About us</Link>
+      </div>
+    </nav>
   );
 }

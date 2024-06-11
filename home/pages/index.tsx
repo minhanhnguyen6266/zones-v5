@@ -1,19 +1,13 @@
-import Link from "next/link";
-import dynamic from "next/dynamic";
-
-const Header = dynamic(import("../components/Header"));
+import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
-      <p>This is our homepage</p>
-      <div>
-        <a href="/blog">Blog</a>
-      </div>
-      <div>
-        <Link href="/about">About us</Link>
-      </div>
+      <main className={styles.main}>
+        <h1 className={styles.title}>This is our homepage</h1>
+      </main>
     </div>
   );
 }
