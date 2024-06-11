@@ -6,14 +6,6 @@
 npx create-next-app --example with-zones with-zones-app
 ```
 
-```bash
-yarn create next-app --example with-zones with-zones-app
-```
-
-```bash
-pnpm create next-app --example with-zones with-zones-app
-```
-
 With multi zones you have multiple Next.js apps over a single app, therefore every app has its own dependencies and it runs independently.
 
 To start the `/home` run the following commands from the root directory:
@@ -26,8 +18,6 @@ cd home
 yarn && yarn dev
 ```
 
-The `/home` app should be up and running in [http://localhost:3000](http://localhost:3000)!
-
 Starting the `/blog` app follows a very similar process. In a new terminal, run the following commands from the root directory :
 
 ```bash
@@ -37,6 +27,3 @@ npm install && npm run dev
 cd blog
 yarn && yarn dev
 ```
-
-The `blog` app should be up and running in [http://localhost:4000](http://localhost:4000)!
-
